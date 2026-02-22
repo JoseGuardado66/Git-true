@@ -1,4 +1,4 @@
-
+//Rende
 function renderProductos() {
     const lista = document.getElementById("listaProductos");
     lista.innerHTML = "";
