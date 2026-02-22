@@ -1,3 +1,4 @@
+ HEAD
 function agregarProducto() {
     const nombre = document.getElementById("nombre").value.trim();
     const precio = parseFloat(document.getElementById("precio").value);
@@ -26,3 +27,20 @@ function agregarProducto() {
     document.getElementById("nombre").value = "";
     document.getElementById("precio").value = "";
 }
+
+//Rende
+function renderProductos() {
+    const lista = document.getElementById("listaProductos");
+    lista.innerHTML = "";
+
+    productos.forEach(producto => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            ${producto.nombre}
+            <span>$${producto.precio}</span>
+        `;
+        lista.appendChild(li);
+    });
+}
+
+ develop
