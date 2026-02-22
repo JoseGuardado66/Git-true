@@ -1,3 +1,4 @@
+
 function renderProductos() {
     const lista = document.getElementById("listaProductos");
     lista.innerHTML = "";
@@ -11,3 +12,4 @@ function renderProductos() {
         lista.appendChild(li);
     });
 }
+
