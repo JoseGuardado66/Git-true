@@ -2,7 +2,7 @@ function agregarProducto() {
     const nombre = document.getElementById("nombre").value.trim();
     const precio = parseFloat(document.getElementById("precio").value);
 
-    // VALIDACIÓN BÁSICA
+    
     if (nombre === "") {
         alert("El nombre no puede estar vacío");
         return;
